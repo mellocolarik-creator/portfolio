@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio · Leonardo Mello</title>
+<meta name="description" content="Agentes de IA, softwares e sites desenvolvidos por Leonardo Mello.">
+<style>
+  :root { --tinta:#1d1a16; --suave:#6b6157; --papel:#faf7f2; --linha:#e6ded3; --ouro:#b8892b; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:16px/1.6 -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:1100px; margin:0 auto; padding:48px 16px 96px; }
+  h1 { font-size:2.2rem; margin:0 0 4px; }
+  .lead { color:var(--suave); margin:0 0 40px; max-width:62ch; }
+  nav { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:48px; }
+  nav a { border:1px solid var(--linha); border-radius:999px; padding:4px 12px; color:var(--tinta); text-decoration:none; font-size:.9rem; background:#fff; }
+  section { border-top:1px solid var(--linha); padding:40px 0; }
+  h2 { font-size:1.5rem; margin:0; }
+  .tipo { color:var(--ouro); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+  .meta { color:var(--suave); font-size:.9rem; margin:4px 0 16px; }
+  p { max-width:70ch; }
+  ul.feitos { max-width:70ch; padding-left:20px; }
+  .aviso { background:#fff6e0; border-left:3px solid var(--ouro); padding:8px 12px; font-size:.9rem; max-width:70ch; }
+  .grade { display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:12px; margin-top:20px; }
+  .grade a { display:block; border:1px solid var(--linha); border-radius:8px; overflow:hidden; background:#fff; }
+  .grade img { display:block; width:100%; height:auto; }
+  .grade .cel img { max-height:420px; object-fit:contain; margin:0 auto; }
+  figcaption { font-size:.8rem; color:var(--suave); padding:6px 10px; }
+  code { font-size:.85em; }
+</style>
+</head>
+<body>
+<main>
+  <p class="tipo">Portfólio</p>
+  <h1>Leonardo Mello</h1>
+  <p class="lead">Agentes de IA, softwares e sites que desenvolvi para a Fantasy Casa de Festas, minha empresa de buffet infantil em Nova Iguaçu, e para o ministério infantil da minha igreja. Os prints usam dados fictícios: nenhum cliente, funcionário ou extrato real aparece.</p>
+  <nav>
+    <a href="#concierge">Concierge (agente WhatsApp)</a><a href="#escalas">FantasyOS · escalas</a><a href="#concil">Conciliação bancária</a>
+    <a href="#appkids">App Kids</a><a href="#site">Site da Fantasy</a>
+  </nav>
+
+  <section id="concierge">
+    <span class="tipo">Agente de IA</span>
+    <h2>Concierge: atendente de IA no WhatsApp da Fantasy</h2>
+    <p class="meta">Python · Agno/AgentOS · Claude · PostgreSQL + pgvector · WhatsApp Business API (Meta) · painel em Next.js · em produção na Railway</p>
+    <p>Agente que responde quem chama a Fantasy no WhatsApp: tira dúvidas sobre festas, pacotes e brinquedos, entende texto, foto, documento e áudio, e conduz o cliente até a visita ao espaço. Ao lado do agente, um painel para a recepção acompanhar as conversas, assumir o atendimento quando preciso, ver o funil de leads que o próprio agente preenche e a agenda de visitas.</p>
+    <ul class="feitos">
+      <li>Funil de leads preenchido pela IA (data, nº de convidados, tema, etapa).</li>
+      <li>Passagem do bot para atendente humano no mesmo painel.</li>
+      <li>Ponto de partida: o template <code>agno-whatsapp-starter</code> do curso Engenheiro de Produtos IA (NoCode StartUp), adaptado e ampliado para o buffet.</li>
+    </ul>
+    <div class="grade">
+      <a href="img/concierge-conversa.jpg"><img src="img/concierge-conversa.jpg" alt="" loading="lazy"><figcaption>Conversa atendida pelo agente</figcaption></a>
+      <a href="img/concierge-gestao.jpg"><img src="img/concierge-gestao.jpg" alt="" loading="lazy"><figcaption>Funil de leads preenchido pela IA</figcaption></a>
+      <a href="img/concierge-conversa2.jpg"><img src="img/concierge-conversa2.jpg" alt="" loading="lazy"><figcaption>Outro cliente: pedido de festa de 15 anos</figcaption></a>
+      <a class="cel" href="img/concierge-conversa-mobile.jpg"><img src="img/concierge-conversa-mobile.jpg" alt="" loading="lazy"><figcaption>Painel no celular</figcaption></a>
+    </div>
+  </section>
+
+  <section id="escalas">
+    <span class="tipo">Software de gestão</span>
+    <h2>FantasyOS: escalas da equipe de eventos</h2>
+    <p class="meta">Next.js · Supabase (Postgres, Auth) · web e celular</p>
+    <p>Organiza quem trabalha em cada festa. O gestor cadastra os eventos, define quantas vagas cada função precisa (garçom, monitor, cozinha, recepção…), convida os colaboradores e acompanha quem confirmou. Cada evento tem ordem de serviço com histórico de alterações, check-in e assinatura digital da diária, e relatórios de custo por evento.</p>
+    <div class="grade">
+      <a href="img/escalas-dashboard.jpg"><img src="img/escalas-dashboard.jpg" alt="" loading="lazy"><figcaption>Painel do gestor</figcaption></a>
+      <a href="img/escalas-escala.jpg"><img src="img/escalas-escala.jpg" alt="" loading="lazy"><figcaption>Escala de um evento</figcaption></a>
+      <a href="img/escalas-os.jpg"><img src="img/escalas-os.jpg" alt="" loading="lazy"><figcaption>Ordem de serviço</figcaption></a>
+      <a href="img/escalas-assinaturas.jpg"><img src="img/escalas-assinaturas.jpg" alt="" loading="lazy"><figcaption>Assinaturas da equipe</figcaption></a>
+      <a class="cel" href="img/escalas-escala-mobile.jpg"><img src="img/escalas-escala-mobile.jpg" alt="" loading="lazy"><figcaption>Escala no celular</figcaption></a>
+    </div>
+  </section>
+
+  <section id="concil">
+    <span class="tipo">Software financeiro</span>
+    <h2>Conciliação bancária</h2>
+    <p class="meta">Next.js · Supabase · Asaas (assinatura) · leitura de planilhas .xlsx</p>
+    <p>Cruza o extrato do banco com os recibos emitidos no sistema do buffet e mostra o que bateu e o que precisa de conferência. Antes isso era feito linha a linha numa planilha.</p>
+    <ul class="feitos">
+      <li>Casa Pix por valor, data e nome, mesmo abreviado ("C M SOUZA" → Camila Souza).</li>
+      <li>Reconhece um Pix que paga vários recibos e um lote de cartão que soma várias vendas.</li>
+      <li>Mesa de conferência para confirmar, trocar ou recusar sugestões, e extrato anotado para baixar.</li>
+      <li>Atende mais de uma casa de festas, com assinatura mensal.</li>
+    </ul>
+    <div class="grade">
+      <a href="img/concil-nova.jpg"><img src="img/concil-nova.jpg" alt="" loading="lazy"><figcaption>Envio do extrato e dos recibos</figcaption></a>
+      <a href="img/concil-resultado.jpg"><img src="img/concil-resultado.jpg" alt="" loading="lazy"><figcaption>Mesa de conferência</figcaption></a>
+      <a href="img/concil-conciliados.jpg"><img src="img/concil-conciliados.jpg" alt="" loading="lazy"><figcaption>Entradas conciliadas automaticamente</figcaption></a>
+    </div>
+  </section>
+
+  <section id="appkids">
+    <span class="tipo">Aplicativo web</span>
+    <h2>App Kids: check-in do ministério infantil</h2>
+    <p class="meta">Next.js · Postgres (Neon) · no ar em appkids.vercel.app</p>
+    <p>Feito para o ministério infantil da Igreja Iguaçu. O responsável cadastra a família pelo QR code, a equipe confere o check-in e entrega a pulseira, e na hora da saída o número da criança aparece no telão para chamar o responsável. Alergias, restrições e autorização de imagem ficam à vista de quem está na sala. O gerente acompanha o dia e gerencia a equipe.</p>
+    <div class="grade">
+      <a href="img/appkids-telao.jpg"><img src="img/appkids-telao.jpg" alt="" loading="lazy"><figcaption>Telão de chamada</figcaption></a>
+      <a href="img/appkids-gerente.jpg"><img src="img/appkids-gerente.jpg" alt="" loading="lazy"><figcaption>Painel do gerente</figcaption></a>
+      <a href="img/appkids-equipe.jpg"><img src="img/appkids-equipe.jpg" alt="" loading="lazy"><figcaption>Tela da equipe</figcaption></a>
+      <a href="img/appkids-cadastro.jpg"><img src="img/appkids-cadastro.jpg" alt="" loading="lazy"><figcaption>Cadastro do responsável</figcaption></a>
+    </div>
+  </section>
+
+  <section id="site">
+    <span class="tipo">Site</span>
+    <h2>Site da Fantasy Casa de Festas</h2>
+    <p class="meta">Next.js (exportação estática) · animações · responsivo</p>
+    <p>Site institucional da casa de festas: abertura com vídeo, o espaço, o parque de brinquedos, galeria de festas, depoimentos e contato direto pelo WhatsApp. Pensado primeiro para o celular, que é de onde vem a maior parte das famílias.</p>
+    <div class="grade">
+      <a href="img/site-casa.jpg"><img src="img/site-casa.jpg" alt="" loading="lazy"><figcaption>Seção “A casa”</figcaption></a>
+    </div>
+  </section>
+
+
+  <footer style="border-top:1px solid var(--linha);padding-top:24px;color:var(--suave);font-size:.9rem">Leonardo Mello · <a href="https://www.linkedin.com/in/leonardo-mello-374381418" style="color:inherit">LinkedIn</a></footer>
+</main>
+</body>
+</html>
